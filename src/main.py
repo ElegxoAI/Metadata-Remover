@@ -18,7 +18,7 @@ def main(context):
         })
 
     if context.req.method != 'POST':
-        return context.res.json({'error': 'Method not allowed'}, 405, {'Access-Control-Allow-Origin': '*'})
+        return context.res.json({'error': 'Method not allowed'}, 405, {'Access-Control-Allow-Origin': ALLOWED_ORIGIN})
 
     try:
         # 2. Parse Payload safely
@@ -30,7 +30,7 @@ def main(context):
         file_name = body.get('file_name', 'file.tmp').lower()
 
         if not file_b64:
-            return context.res.json({'error': 'Missing file_b64 in payload'}, 400, {'Access-Control-Allow-Origin': '*'})
+            return context.res.json({'error': 'Missing file_b64 in payload'}, 400, {'Access-Control-Allow-Origin': ALLOWED_ORIGIN})
 
         # 3. Clean and fix Base64 string padding
         if ',' in file_b64:
