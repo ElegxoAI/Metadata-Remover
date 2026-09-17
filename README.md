@@ -1,48 +1,36 @@
-# ⚡ Python Starter Function
+# Metadata Remover
 
-A simple starter function. Edit `src/main.py` to get started and create something awesome! 🚀
+Privacy-focused metadata removal tool from Elegxo AI.
 
-## 🧰 Usage
+## Basic Metadata Remover
 
-### GET /ping
+The Basic Metadata Remover processes supported files locally in your browser. It is designed for JPG and other basic image formats, with processing performed directly on your device.
 
-- Returns a "Pong" message.
+## Advanced Metadata Remover
 
-**Response**
+The Advanced Metadata Remover uses the Elegxo AI cloud function with open-source tools for server-side processing. It supports a wider range of formats, including images, PDFs, and Office documents such as Word and Excel files.
 
-Sample `200` Response:
+The Advanced version returns a cleaned file with the supported metadata removed.
 
-```text
-Pong
-```
+## Basic vs Advanced
 
-### GET, POST, PUT, PATCH, DELETE /
+| Feature | Basic | Advanced |
+|---|---|---|
+| Processing | Local browser | Elegxo AI cloud function |
+| Image metadata removal | ✓ | ✓ |
+| JPG / basic image formats | ✓ | ✓ |
+| PDFs | — | ✓ |
+| Office documents | — | ✓ |
+| Wider format support | — | ✓ |
+| Server-side processing | — | ✓ |
+| Open-source processing tools | — | ✓ |
 
-- Returns a "Learn More" JSON response.
+## ⚠️ License & Usage
 
-**Response**
+This repository is public for **auditing purposes only** so users can verify our privacy claims.
 
-Sample `200` Response:
+**This is NOT open-source software.**
 
-```json
-{
-  "motto": "Build like a team of hundreds_",
-  "learn": "https://appwrite.io/docs",
-  "connect": "https://appwrite.io/discord",
-  "getInspired": "https://builtwith.appwrite.io"
-}
-```
+You do not have permission to copy this code, fork this repository for your own use, or route traffic through our hosted API endpoints. Unauthorized API usage is blocked via strict CORS policies and rate limiting.
 
-## ⚙️ Configuration
-
-| Setting           | Value                             |
-| ----------------- | --------------------------------- |
-| Runtime           | Python (3.9)                      |
-| Entrypoint        | `src/main.py`                     |
-| Build Commands    | `pip install -r requirements.txt` |
-| Permissions       | `any`                             |
-| Timeout (Seconds) | 15                                |
-
-## 🔒 Environment Variables
-
-No environment variables required.
+Read the [LICENSE](./LICENSE) file for full details.
