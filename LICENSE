@@ -1,0 +1,15 @@
+Copyright (c) 2026 Elegxo AI. All Rights Reserved.
+
+PROPRIETARY AND CONFIDENTIAL
+
+This source code and associated documentation files (the "Software") are the proprietary property of Elegxo AI. 
+
+By accessing this repository, you agree to the following terms:
+
+1. NO COPYING OR DISTRIBUTION: You may not copy, clone, modify, merge, publish, distribute, sublicense, or sell copies of the Software in whole or in part. 
+2. NO COMMERCIAL USE: You may not use this Software or any portion of its code for personal, internal, or commercial projects.
+3. NO INFRASTRUCTURE ABUSE: You are strictly prohibited from connecting to, calling, scraping, or otherwise utilizing the hosted URLs, API endpoints, or server infrastructure associated with this Software (including but not limited to Appwrite Edge Functions) for your own applications, websites, or services.
+
+This repository is provided for public viewing and auditing purposes only to demonstrate the security and privacy of the Elegxo AI platform. Viewing this code does not grant you any rights to use it.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
