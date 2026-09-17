@@ -47,7 +47,7 @@ def main(context):
         try:
             file_data = base64.b64decode(file_b64)
         except Exception as b64_err:
-            return context.res.json({'error': f'Invalid Base64 data: {str(b64_err)}'}, 400, {'Access-Control-Allow-Origin': '*'})
+            return context.res.json({'error': f'Invalid Base64 data: {str(b64_err)}'}, 400, {'Access-Control-Allow-Origin': ALLOWED_ORIGIN})
 
         ext = os.path.splitext(file_name)[1]
 
@@ -89,7 +89,7 @@ def main(context):
                                     metadata_removed.append("Hidden Core Properties")
 
             else:
-                return context.res.json({'error': f'Unsupported file type: {ext}'}, 400, {'Access-Control-Allow-Origin': '*'})
+                return context.res.json({'error': f'Unsupported file type: {ext}'}, 400, {'Access-Control-Allow-Origin': ALLOWED_ORIGIN})
 
             # 6. Read the clean file back into memory
             with open(temp_out_path, "rb") as f:
@@ -102,7 +102,7 @@ def main(context):
                 'file_b64': clean_b64,
                 'metadata_removed': list(set(metadata_removed)) if metadata_removed else ["No metadata found"],
                 'sizeSaved': len(file_data) - len(clean_data)
-            }, 200, {'Access-Control-Allow-Origin': '*'})
+            }, 200, {'Access-Control-Allow-Origin': ALLOWED_ORIGIN})
 
         finally:
             # 7. PRIVACY GUARANTEE: Wipe files immediately
@@ -113,4 +113,4 @@ def main(context):
 
     except Exception as e:
         context.error(f"Processing Error: {str(e)}")
-        return context.res.json({'error': f'Server processing failed: {str(e)}'}, 500, {'Access-Control-Allow-Origin': '*'})
+        return context.res.json({'error': f'Server processing failed: {str(e)}'}, 500, {'Access-Control-Allow-Origin': ALLOWED_ORIGIN})
