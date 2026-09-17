@@ -19,11 +19,11 @@ The Advanced version returns a cleaned file with the supported metadata removed.
 | Processing | Local browser | Elegxo AI cloud function |
 | Image metadata removal | ✓ | ✓ |
 | JPG / basic image formats | ✓ | ✓ |
-| PDFs | — | ✓ |
-| Office documents | — | ✓ |
-| Wider format support | — | ✓ |
-| Server-side processing | — | ✓ |
-| Open-source processing tools | — | ✓ |
+| PDFs | - | ✓ |
+| Office documents | - | ✓ |
+| Wider format support | - | ✓ |
+| Server-side processing | - | ✓ |
+| Open-source processing tools | - | ✓ |
 
 ## ⚠️ License & Usage
 
