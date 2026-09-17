@@ -7,10 +7,13 @@ from PIL import Image
 import pikepdf
 
 def main(context):
+    # Define who is allowed to talk to your server
+    ALLOWED_ORIGIN = 'https://elegxoai.in'
+    
     # 1. Handle CORS for browser requests
     if context.req.method == 'OPTIONS':
         return context.res.send('', 200, {
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': ALLOWED_ORIGIN,
             'Access-Control-Allow-Headers': 'Content-Type, Authorization, x-appwrite-key',
         })
 
