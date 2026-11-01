@@ -8,7 +8,9 @@ import pikepdf
 
 def main(context):
     # Define who is allowed to talk to your server
-    ALLOWED_ORIGIN = 'https://elegxoai.in'
+    # ALLOWED_ORIGIN = 'https://elegxoai.in'
+
+    ALLOWED_ORIGIN = '*'
     
     # 1. Handle CORS for browser requests
     if context.req.method == 'OPTIONS':
